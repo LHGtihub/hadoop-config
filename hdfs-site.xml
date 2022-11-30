@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+ <!-- Hadoop2.x 50070 -->
+ <!-- Hadoop3.x 9870 -->
+            <property>
+              <name>dfs.namenode.http-address</name>
+               <value>hadoop-one:50070</value>
+			   <!--> web对外提供接口页面访问地址<-->                                                     </property>
+           
+            <property>
+                <name>dfs.namenode.name.dir</name>
+                <value>/home/lihao/hadoop-3.3.4/dfs/name</value>
+            </property>
+
+            <property>
+               <name>dfs.datanode.data.dir</name>
+               <value>/home/lihao/hadoop-3.3.4/dfs/data</value>
+            </property>
+
+             <property>
+                <name>dfs.namenode.checkpoint.dir</name>
+                <value>/home/lihao/hadoop-3.3.4/dfs/namesecondary</value>
+            </property>
+     <!--指定当前集群节点有多少个，这个配置很重要-->
+          <!--  <property>
+                <name>dfs.hosts</name>
+                <value>/home/lihao/hadoop-3.3.4/etc/hadoop/slaves</value>
+            </property>-->
+
+
+     <!--> 指定hadoop数据存储的目录<-->
+         <property>
+            <name>hadoop.tmp,dir</name>
+            <value>/home/lihao/hadoop-3.3.4/dfs/tmp</value>  <!-->默认存储在宿主机的 /tmp/Hadoop下，会随着时间自动清除 <-->
+        </property>
+
+            <property>
+                <name>dfs.replication</name>
+                <value>2</value>
+            </property> 
+
+</configuration>

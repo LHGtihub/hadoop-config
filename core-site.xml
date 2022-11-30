@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>                                                                                                                                                                                        
+   <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+       <property> <!-->设置NameNOde地址，默认端口8082<-->
+          <name>fs.defaultFS</name>
+          <value>hdfs://hadoop-one:9000</value>
+          <!-->Hadoop内部的通讯端口,hadoop-test 为当前宿主机的ip，可以在/etc/hostname 文件查看，或者/etc/hosts 
+          同时需要在 hdfs-site.xml 文件中配置web页面访问地址,让用户直接可以在web页面直接可以访问，不需要操作命令行！
+          <-->
+       </property>
+</configuration>
+
